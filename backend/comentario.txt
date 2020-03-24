@@ -1,0 +1,70 @@
+Instalar gerenciador de pacotes choclate
+Instalar o node.js
+Instalar o VisualStudio
+
+Para iniciar um projeto node.js
+>> npm init -y
+
+Instalar pacote para hiperlinks "amigáveis"
+>> npm install express
+
+React
+>> npx create-react-app fronted
+
+rodar o react
+>> npn start
+
+Instalar o Isomnia
+
+Instalar o nodemon
+>>npm install nodemon -D
+
+depois executar
+>> npm start
+
+Banco de dados
+Knex.js
+>>npm install Knex
+>>npm install sqlite3
+
+iniciar o knex
+>>npx knex init
+
+
+para criar uma migrate banco de dados
+>>npx knex migrate:make create_incidents
+
+Módulo de segurança
+>>npm install cors
+
+/**
+ * Rota / Recurso
+ */
+
+ /**
+  * Método HTTP:
+  * 
+  * GET: Buscar uma informação do back-end
+  * POST: Criar uma informação no back-end
+  * PUT: Alterar uma informação no back-end
+  * DELETE: Deletar uma informação no back-end
+  */
+
+  /**
+   * Tipos de parâmetros:
+   * 
+   * Query: Parametros nomeados enciados na rota após o "?" (Filtros, paginação) Ex. http://localhost:3333/users?nome="lucas"&idade="37"
+   * Route Params: Parâmetros utilizados para identificar recursos Ex. http://localhost:3333/users/1
+   * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
+   */
+
+
+   /**
+    * SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+    * NoSQL: MongoDB, CouchDB, etc
+    */
+
+    /**
+     * Driver: SELECT * FROM users
+     * Query Builder: table('users').select('*').where() <-- Usar este
+     */
