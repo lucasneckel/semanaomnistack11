@@ -1,4 +1,4 @@
-Instalar gerenciador de pacotes choclate
+﻿Instalar gerenciador de pacotes choclate
 Instalar o node.js
 Instalar o VisualStudio
 
@@ -36,6 +36,13 @@ para criar uma migrate banco de dados
 
 Módulo de segurança
 >>npm install cors
+
+Cliente Http
+>> npm install axios
+
+instalando o expo
+>>npm install -g expo-cli
+
 
 /**
  * Rota / Recurso
