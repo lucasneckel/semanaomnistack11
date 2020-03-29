@@ -56,6 +56,10 @@ formatação de moeda
 >>npm install intl
 
 
+validade
+>>npm install celebrate
+
+
 
 
 /**
