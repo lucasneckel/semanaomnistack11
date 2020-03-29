@@ -43,6 +43,20 @@ Cliente Http
 instalando o expo
 >>npm install -g expo-cli
 
+habilitar a execução de script no powershell - executar como administrador
+>>Set-ExecutionPolicy Unrestrict
+
+Instalar o yarn - executar powershell como administrador
+>>choco install yarn
+
+iniciar aplicativo mobile pelo expo selecionar template blanck
+>>expo init mobile
+
+formatação de moeda
+>>npm install intl
+
+
+
 
 /**
  * Rota / Recurso

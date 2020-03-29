@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/lucasneckel/semanaomnistack11#readme",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "yarn": "^1.22.4"
   },
   "devDependencies": {},
   "description": ""

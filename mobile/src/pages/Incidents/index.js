@@ -12,7 +12,6 @@ import styles from "./styles";
 export default function Incidents() {
   const [incidents, setIncidents] = useState([]);
   const [total, setTotal] = useState(0);
-
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
@@ -23,23 +22,23 @@ export default function Incidents() {
   }
 
   async function loadIncidents() {
-    if (loading) {
+    if(loading) {
       return;
     }
-
-    if (total > 0 && incidents.length === total) {
+  
+    if (total > 0 && incidents.length == total) {
       return;
     }
-
+  
     setLoading(true);
 
-    const response = await api.get("incidents", {
-      params: { page }
+    const response = await api.get('incidents', {
+      params: {page}
     });
 
-    setIncidents([...incidents, ...response.data]);
-    setTotal(response.headers["x-total-count"]);
+    setIncidents([ ... incidents, ... response.data]);
     setPage(page + 1);
+    setTotal(response.headers['x-total-count']);
     setLoading(false);
   }
 
@@ -65,7 +64,7 @@ export default function Incidents() {
         data={incidents}
         style={styles.incidentList}
         keyExtractor={incident => String(incident.id)}
-        // showsVerticalScrollIndicator={false}
+        //showsVerticalScrollIndicator={false}
         onEndReached={loadIncidents}
         onEndReachedThreshold={0.2}
         renderItem={({ item: incident }) => (
@@ -78,10 +77,10 @@ export default function Incidents() {
 
             <Text style={styles.incidentProperty}>VALOR:</Text>
             <Text style={styles.incidentValue}>
-              {Intl.NumberFormat("pt-BR", {
-                style: "currency",
-                currency: "BRL"
-              }).format(incident.value)}
+              {Intl.NumberFormat('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+                }).format(incident.value)}
             </Text>
 
             <TouchableOpacity
